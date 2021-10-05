@@ -40,18 +40,18 @@ public class MainLCS {
         System.out.printf("%.3f ms%n", (fim2 - inicio2)/1000d);
 
         // memoizado
-        int maximum = 1000;
-        int[][] dp = new int[m][maximum];
-
-        for (int[] row : dp) {
-            Arrays.fill(row, -1);
-        }
-
-        long inicio3 = System.currentTimeMillis();
-        System.out.println("Length of LCS: " + LCSMemoizado.lcs(s1, s2, m, n, dp));
-
-        long fim3 = System.currentTimeMillis();
-        System.out.println();
-        System.out.printf("%.3f ms%n", (fim3 - inicio3)/1000d);
+//        int maximum = 1000;
+//        int[][] dp = new int[m][maximum];
+//
+//        for (int[] row : dp) {
+//            Arrays.fill(row, -1);
+//        }
+//
+//        long inicio3 = System.currentTimeMillis();
+//        System.out.println("Length of LCS: " + LCSMemoizado.lcs(s1, s2, m, n, dp));
+//
+//        long fim3 = System.currentTimeMillis();
+//        System.out.println();
+//        System.out.printf("%.3f ms%n", (fim3 - inicio3)/1000d);
     }
 }
